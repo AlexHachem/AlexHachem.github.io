@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Roman to English</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://use.typekit.net/krr1que.css">
+    <link rel="icon" href="roman.jpeg">
+
+
+
+</head>
+<style>
+    .navbar{
+        position: absolute;;
+        background-color:gray;
+
+    }
+    body{
+        /* background-color:#1f252f; */
+        background-color: #1b1b32;
+        color: #f5f6f7;
+        font-family: roboto-mono, monospace;
+    }
+    .box {
+        background-color: #F8F0E3 ;
+        width: 50px; 
+        height: 300px;
+
+
+    }
+    p {
+    font-size: 50px;
+    text-align: center;
+}
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .huge{
+        font-size: 300px;
+        /* line-height: 80%; */
+        /* background-color : #1f252f; */
+        background-color: #1b1b32;
+        color: #f5f6f7;
+        text-align: center;
+        width: 600px;
+        height: 400px;
+    }
+
+    
+</style>
+<body>
+    <div class="navbar">Help English to Roman</div>
+    <div class="container">
+        <h1><strong><Roman Numerals to Numbers</strong></h1>
+        <h2>Input your roman numerals here: </h2>
+        <div>
+            <form onsubmit="handleSubmit(); return false">
+                <input placeholder="IX" type="text" class="huge" id="roman-input" style = "width:100%">
+            </form>
+        </div>
+        <div id="result">
+            <p>Your Roman number is: </p>
+            <p id="result-text"></p>
+        </div>
+    </div>
+</body>
+</html>

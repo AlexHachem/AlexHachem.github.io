@@ -1,0 +1,22 @@
+body {
+    background-color:black;
+    color: white;
+}
+
+.box {
+    background-color: white;
+    width: 50px; 
+    height: 300px;
+
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.huge{
+    font-size: 500px;
+    margin: 5px;
+    margin-bottom: 2px;
+}

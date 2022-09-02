@@ -4,32 +4,26 @@ function convertRoman(inputString) {
     arr = [];
     for (let i = 0; i < inputString.length; i++) {
       if (inputString[i] == "I") arr.push(1);
-      if (inputString[i]== "V") arr.push(5);
+      if (inputString[i] == "V") arr.push(5);
       if (inputString[i] == "X") arr.push(10);
-      if (inputString[i]== "L") arr.push(50);
-      if (inputString[i]== "C") arr.push(100);
+      if (inputString[i] == "L") arr.push(50);
+      if (inputString[i] == "C") arr.push(100);
       if (inputString[i] == "D") arr.push(500);
       if (inputString[i] == "M") arr.push(1000);
     }
-    console.log("arr: ", arr);
+
     for (let i = 0; i < arr.length; i++) {
       result += arr[i];
       if (i < arr.length - 1) {
-        if ((arr[i] == 1 && arr[i + 1] == 5))
-            result -= 2;
-        if(arr[i] == 1 && arr[i+1] ==10)
-            result -= 2
-        if ((arr[i] == 10 && arr[i + 1] == 50))
-          result -= 20;
-        if ((arr[i] == 10 && arr[i+1] == 100))
-            result -= 20
-        if ((arr[i] == 100 && arr[i + 1] == 500))
-          result -= 200;
-        if ((arr[i] == 100 && arr[i+1] == 1000))
-            result -= 200
+        if (arr[i] == 1 && arr[i + 1] == 5) result -= 2;
+        if (arr[i] == 1 && arr[i + 1] == 10) result -= 2;
+        if (arr[i] == 10 && arr[i + 1] == 50) result -= 20;
+        if (arr[i] == 10 && arr[i + 1] == 100) result -= 20;
+        if (arr[i] == 100 && arr[i + 1] == 500) result -= 200;
+        if (arr[i] == 100 && arr[i + 1] == 1000) result -= 200;
       }
     }
-    console.log("result", result);
+
     return result;
   } catch (e) {
     console.error("Error Converting to Roman", e);
@@ -39,8 +33,7 @@ function convertRoman(inputString) {
 
 function handleSubmit() {
   const inputString = document.getElementById("roman-input").value;
-  console.log("input String hehe: 🍆", inputString);
-  var result = document.querySelector("#result");
+
   var p = document.getElementById("result-text");
   p.textContent = convertRoman(inputString);
 

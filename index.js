@@ -3,13 +3,14 @@ function convertRoman(inputString) {
     result = 0;
     arr = [];
     for (let i = 0; i < inputString.length; i++) {
-      if (inputString[i] == "I") arr.push(1);
-      if (inputString[i] == "V") arr.push(5);
-      if (inputString[i] == "X") arr.push(10);
-      if (inputString[i] == "L") arr.push(50);
-      if (inputString[i] == "C") arr.push(100);
-      if (inputString[i] == "D") arr.push(500);
-      if (inputString[i] == "M") arr.push(1000);
+      if (inputString[i].toLowerCase() == "i") arr.push(1);
+      else if (inputString[i].toLowerCase() == "v") arr.push(5);
+      else if (inputString[i].toLowerCase() == "x") arr.push(10);
+      else if (inputString[i].toLowerCase() == "l") arr.push(50);
+      else if (inputString[i].toLowerCase() == "c") arr.push(100);
+      else if (inputString[i].toLowerCase() == "d") arr.push(500);
+      else if (inputString[i].toLowerCase() == "m") arr.push(1000);
+      else throw("Wrong Character Input");
     }
 
     for (let i = 0; i < arr.length; i++) {
@@ -27,7 +28,7 @@ function convertRoman(inputString) {
     return result;
   } catch (e) {
     console.error("Error Converting to Roman", e);
-    return false;
+    return e;
   }
 }
 

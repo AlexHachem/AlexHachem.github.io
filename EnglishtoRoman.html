@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Roman to English</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="EnglishtoRoman.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/krr1que.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/roman.jpeg" />
+  </head>
+
+  <body>
+    <div class="navbar"><a href = "index.html">Roman to English</a></div>
+    <div class="container">
+      <h2>Input Your English Integer Here:</h2>
+      <div>
+        <form onsubmit="handleSubmit(); return false">
+          <input
+            placeholder="IX"
+            type="text"
+            class="huge"
+            id="roman-input"
+            style="width: 100%"
+          />
+        </form>
+      </div>
+      <div>
+        <p>Your English Number Is:</p>
+        <p id="result-text"></p>
+      </div>
+    </div>
+  </body>
+</html>

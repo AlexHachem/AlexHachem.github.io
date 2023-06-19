@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gym Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="GymCalculator.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/krr1que.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/roman.jpeg" />
+  </head>
+
+  <body>
+    <div class = "navback">
+        <a href = index.html title = "Roman to English Converter" class = "navbar">Roman to English</a>
+        <a href = EnglishtoRoman.html title = "English to Roman Converter" class = "navbar">English to Roman</a>
+      </div>    <div class="container">
+      <h2>Input Your Details Here:</h2>
+      <div class = "yes">
+
+        <form  onsubmit="handleChoice(); return false">
+            <label for = "metric">Metric</label>
+            <input
+            type = "radio"
+            id = "metric"
+            checked = "checked"
+            name = "unit"
+            onchange = "handleChoice();"
+            >
+            <label for = "imperial">Imperial</label>
+            <input
+            type = "radio"
+            id = "imperial"
+            name = "unit"
+            onchange = "handleChoice();"
+            />
+            
+        </form>
+        </div>
+        <div>
+        <form onsubmit="handleSubmit(); return false">
+            <label for = "height">Height: </label>
+          <input
+            placeholder = "CM"
+            type="text"
+            class="gym"
+            name = "height"
+            id="height"
+          />
+            <label for = "weight">Weight: </label>
+            <input
+              placeholder="Kilos"
+              type="text"
+              class="gym"
+              name = "weight"
+              id="weight"
+            />
+            <br/>
+            <center><input type = "submit"/></center>
+          </form>
+      </div>
+      <div>
+        <p>Your Results are:</p>
+        <p id="result-text"></p>
+      </div>
+    </div>
+  </body>
+</html>

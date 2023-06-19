@@ -1,17 +1,44 @@
 .navbar {
-  position: absolute;
-  background-color: #eeeef6;
-  border-radius: 5px;
+  position: inline-block;
+  font-size: 15px;
+  /* background-color: hsl(240, 31%, 95%); */
+  background-color:white;
+  width: 150px;
+  height:56px;
   color: #1b1b32;
-
+  color: gray;
+  border-radius:20px;
+  
+ 
 }
+
+.navback{
+  text-align: right;
+
+  border: 5 px;
+  border-style:solid;
+  border-color: black;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-color:white;
+  width: 100%;
+  padding: 10px;
+}
+img{
+  width:20px;
+  height:20px;
+}
+
 a{
   text-decoration: none;
   color: #1b1b32
 }
-a:active
+a:hover
 {
-  color: #474785;
+  /* background-color: #474785; */
+  background: rgba(0,0,0,0.1);
+  color: black;
 }
 body {
   background-color: #1b1b32;
@@ -43,4 +70,29 @@ p {
   text-align: center;
   width: 600px;
   height: 400px;
+}
+.gym {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 50px;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  text-align: center;
+  width: 70px;
+  height: 50px;
+}
+.yes {
+  display: inline-block;
+  margin-right: 50px;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  text-align: center;
+}
+placeholder{
+  display: inline-block;
+  border: 10px solid black;
+  padding: 20px;
+}
+h2{
+  padding-top: 50px;
 }

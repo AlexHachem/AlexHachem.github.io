@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="GymCalculator.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/krr1que.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="general.css" />
     <link rel="icon" href="images/roman.jpeg" />
   </head>
 
   <body>
     <div class = "navback">
-        <a href = index.html title = "Roman to English Converter" class = "navbar">Roman to English</a>
-        <a href = EnglishtoRoman.html title = "English to Roman Converter" class = "navbar">English to Roman</a>
-      </div>    <div class="container">
+      <a href ="index.html"><img align = "left" class = "navbar" src = "images/OIP.png"></a> 
+      <a href = RomantoEnglish.html title = "Roman to English Converter" class = "navbar">Roman to English</a>
+      <a href = EnglishtoRoman.html title = "English to Roman Converter" class = "navbar">English to Roman</a>
+      <a href = GymCalculator.html title = "Gym Calculator" class = "navbar">Gym Calculator</a>
+    </div>    
+    <div class="container">
       <h2>Input Your Details Here:</h2>
-      <div class = "yes">
-
+      <div>
         <form  onsubmit="handleChoice(); return false">
             <label for = "metric">Metric</label>
             <input
@@ -27,7 +29,7 @@
             checked = "checked"
             name = "unit"
             onchange = "handleChoice();"
-            >
+            />
             <label for = "imperial">Imperial</label>
             <input
             type = "radio"

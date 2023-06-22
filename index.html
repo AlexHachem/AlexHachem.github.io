@@ -5,34 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Roman to English</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/krr1que.css" />
+    <script src="EnglishtoRoman.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/krr3que.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" href="images/roman.jpeg" />
   </head>
 
   <body>
+    <div class = "title">
+      My Projects <hr>
+    </div>
     <div class = "navback">
+      <a href ="index.html"><img align = "left" class = "navbar" src = "images/OIP-white.png"></a> 
+      <a href = "RomantoEnglish.html" title = "Roman to English Converter" class = "navbar">Roman to English</a>
       <a href = EnglishtoRoman.html title = "English to Roman Converter" class = "navbar">English to Roman</a>
       <a href = GymCalculator.html title = "Gym Calculator" class = "navbar">Gym Calculator</a>
     </div>
-    <div class="container">
-      <h2>Input Your Roman Numerals Here:</h2>
-      <div>
-        <form onsubmit="handleSubmit(); return false">
-          <input
-            placeholder="Ⅸ"
-            type="text"
-            class="huge"
-            id="roman-input"
-            style="width: 100%"
-          />
-        </form>
-      </div>
-      <div>
-        <p>Your Roman Number Is:</p>
-        <p id="result-text"></p>
-      </div>
+
+    <div class = "home">
+     <div class = "hometitle">ROMAN TO ENGLISH</div><hr>
+     <div class="hometext">
+      Using this calculator, you can convert roman numerals into English integers!
+
+     </div>
+     <div class = "homebutton">
+      <a href = "RomantoEnglish.html">Try it Now!</a> 
+     </div>
+     
+    </div>
+
+    <div class = "home">
+      <div class ="hometitle"> ENGLISH TO ROMAN <hr></div>
+     <div class="hometext">
+      Using this calculator, you can convert English integers into Roman numerals!
+
+     </div>
+     <div class = "homebutton">
+      <a href = "EnglishtoRoman.html">Try it Now!</a> 
+     </div>
+
+    </div>
+
+    <div class = "home">
+     <div class ="hometitle"> BMI CALCULATOR <hr></div>
+     <div class="hometext">
+      Using this calculator, you can calculate your BMI!
+
+     </div>
+      <div class = "homebutton">
+      <a href = "GymCalculator.html">Try it Now!</a> 
+     </div>
+     <div>
+     </div>
     </div>
   </body>
 </html>

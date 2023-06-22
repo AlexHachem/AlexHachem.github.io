@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Roman to English</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="RomantoEnglish.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/krr1que.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="icon" href="images/roman.jpeg" />
+  </head>
+
+  <body>
+    <div class = "navback">
+      <a href ="index.html"><img align = "left" class = "navbar" src = "images/OIP.png"></a> 
+      <a href = RomantoEnglish.html title = "Roman to English Converter" class = "navbar">Roman to English</a>
+      <a href = EnglishtoRoman.html title = "English to Roman Converter" class = "navbar">English to Roman</a>
+      <a href = GymCalculator.html title = "Gym Calculator" class = "navbar">Gym Calculator</a>
+    </div>    
+    <div class="container">
+      <h2>Input Your Roman Numerals Here:</h2>
+      <div>
+        <form onsubmit="handleSubmit(); return false">
+          <input
+            placeholder="Ⅸ"
+            type="text"
+            class="huge"
+            id="roman-input"
+            style="width: 100%"
+          />
+        </form>
+      </div>
+      <div>
+        <p>Your Roman Number Is:</p>
+        <p id="result-text"></p>
+      </div>
+    </div>
+  </body>
+</html>
